@@ -177,7 +177,7 @@ const rhythmOptConfig = {
   decayRate: 0.88,          // 衰减速率
   minValue: 0.05,           // 最小透明度
   maxValue: 1.0,            // 最大透明度
-  delay: 400,               // 延迟时间（ms），适配蓝牙耳机（100-300ms 按需调整）
+  delay: 0,               // 延迟时间（ms），适配蓝牙耳机（100-300ms 按需调整）
   frameRate: 60             // 预估帧率
 };
 
