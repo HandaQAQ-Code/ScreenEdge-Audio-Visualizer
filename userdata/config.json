@@ -1,0 +1,11 @@
+{
+  "lowFreqRange": [
+    0,
+    255
+  ],
+  "peakWindowSize": 60,
+  "nonLinearPower": 2,
+  "decayRate": 0.92,
+  "minValue": 0.05,
+  "maxValue": 0.8
+}

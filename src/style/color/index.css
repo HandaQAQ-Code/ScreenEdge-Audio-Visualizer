@@ -1,0 +1,14 @@
+.set1 {
+  --color-1: #fe96fe;
+  --color-2: #ff9aff;
+  --color-3: rgb(255, 135, 98);
+  --color-4: #c58ef8;
+  --color-5: #6cc2fb;
+}
+.set2 {
+  --color-1: #ffc6c6;
+  --color-2: #ffe6cd;
+  --color-3: #ffffcd;
+  --color-4: #c5f9c5;
+  --color-5: #c2e1ff;
+}
