@@ -1,54 +1,73 @@
-# musicvisualize
+# 🎶 ScreenEdge Audio Visualizer
 
-This template should help get you started developing with Vue 3 in Vite.
+## 开发中
 
-## Recommended IDE Setup
+让你的桌面“会跳动”的炫酷音频可视化工具
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 📌 项目简介
 
-## Recommended Browser Setup
+**ScreenEdge Audio Visualizer** 是一款轻量级、跨平台的桌面端视觉插件，它能够读取系统音频信号，并在 **屏幕四周渲染实时的频谱可视化效果**。
+无论你在听音乐、看电影、玩游戏，都能让画面边缘随着声音动态跳动，为桌面带来沉浸式视觉体验。
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## ✨ 功能特性
 
-## Type Support for `.vue` Imports in TS
+- 🔊 **实时音频捕获**：支持系统音频与麦克风音频
+- 🌈 **环绕屏幕的边框特效**（屏幕四边都可显示）
+- 🎨 **多种可视化样式**：柱状、波形、光线、柔光条、频段块等
+- ⚙️ **高度可自定义**：
+  - 颜色
+  - 动画速度
+  - 灵敏度
+  - 边框粗细
+  - 显示边（上/下/左/右任意组合）
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- 🖥️ **支持多显示器**
+- 🪶 **资源占用低**
+- ⛓️ **插件式架构**（可扩展不同渲染器）
 
-## Customize configuration
+## 🚀 快速开始
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### 1. 克隆项目
 
-## Project Setup
+```bash
+git clone https://github.com/yourname/screenedge-audio-visualizer.git
+cd screenedge-audio-visualizer
+```
 
-```sh
+### 2. 安装依赖
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### 3. 启动
 
-```sh
+```bash
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+## 🔧 技术实现
 
-```sh
-npm run build
-```
+项目主要使用：
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+- **Electron / Node.js** 获取音频与控制窗口
+- **Web Audio API** 做 FFT 频谱分析
+- **Vue** 实现流畅渲染
+- **透明窗口 + 点击穿透** 实现不影响正常操作的桌面覆盖透明层
 
-```sh
-npm run test:unit
-```
+## 🗺️ 路线图（Roadmap）
 
-### Lint with [ESLint](https://eslint.org/)
+- [ ] 添加更多可视化主题
+- [ ] 性能优化（GPU 加速）
+- [ ] 发布跨平台安装包
+- [ ] 支持第三方主题市场
 
-```sh
-npm run lint
-```
+## 🤝 贡献
+
+欢迎 PR 或 Issue！任何视觉创意、性能优化、跨平台支持建议都非常宝贵。
+
+## 📄 许可证
+
+MIT License
+
+---
